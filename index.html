@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Shahida Shahab Shima</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="blob a"></div>
+  <div class="blob b"></div>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <img src="d.jpg" alt="Your photo">
+        </div>
+        <div>
+          <h1 id="yourName">Shahida Shahab Shima</h1>
+          <div class="muted" style="font-size:13px">Frontend · Web · Student</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro reveal">
+          <h2>Hello — I'm <span id="heroName">Shahida Shahab Shima</span></h2>
+          <p>I'm a student and aspiring full stack Web Developer...</p>
+          <div class="badges">
+            <div class="badge">HTML</div>
+            <div class="badge">CSS</div>
+            <div class="badge">JavaScript</div>
+           
+          </div>
+          <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
+            <a href="#projects" class="cta">See Projects</a>
+            <a href="#contact" class="contact-btn">Hire / Collaborate</a>
+          </div>
+        </div>
+
+        <aside class="side-top">
+          <div class="card profile-card reveal">
+            <div style="width:84px;height:84px;border-radius:999px;overflow:hidden;border:2px solid rgba(255,255,255,0.06)">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Your photo">
+            </div>
+            <h3>Hi, I'm <span id="sideName">Shahida Shahab Shima</span></h3>
+            <div class="muted">Bangladesh · Student · CSE & CSIT</div>
+            <div class="contacts">
+              <a class="contact-btn" href="mailto:your.email@example.com">Email</a>
+              <a class="contact-btn" href="#contact">Message</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+          <article class="project reveal">
+            <h4>User Management System (UMS)</h4>
+            <p>A desktop UI built with PyQt...</p>
+            <div class="chips">
+              <span class="chip">PyQt</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h3>Skills</h3>
+        <div class="skills reveal">
+          <div class="skill"><b>HTML/CSS</b><small class="muted">Responsive UI</small></div>
+          <div class="skill"><b>JavaScript</b><small class="muted">DOM, Fetch, Async</small></div>
+          <div class="skill"><b>Python</b><small class="muted">ML, Scripting</small></div>
+          <div class="skill"><b>Machine Learning</b><small class="muted">Basic Models</small></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h3>Contact Me</h3>
+        <div class="card contact-form reveal">
+          <form id="contactForm">
+            <div class="row">
+              <input id="name" name="name" placeholder="Your name" required>
+              <input id="email" name="email" placeholder="Your email" type="email" required>
+            </div>
+            <input id="subject" name="subject" placeholder="Subject">
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button type="submit" class="cta">Send Message</button>
+              <div id="formStatus" class="muted" style="font-size:13px"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        Built with ❤️ • <span id="year"></span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
